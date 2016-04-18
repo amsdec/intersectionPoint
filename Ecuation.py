@@ -13,8 +13,3 @@ class Ecuation(object):
 		despejeY = "y = (" + str(getMultiplierOfXIn(linea)) + "x + " + str(getSumandos(linea)) + ")/" + str(getMultiplierOfYIn(linea))
 		print("Despejando Y en la ecuacion...")
 		print despejeY
-
-class EquationResolver(object):
-
-	def findValue(self, equationOne, equationTwo):		
-		return (equationTwo.sumando*equationOne.multiplicadorDeY - equationOne.sumando*equationTwo.multiplicadorDeY)/(equationOne.multiplicadorDeX*equationTwo.multiplicadorDeY - equationOne.multiplicadorDeY*equationTwo.multiplicadorDeX)
